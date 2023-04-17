@@ -1,14 +1,33 @@
+<!--
+Todo: add an icon + logo
 <p align="center"> <img alt="Space Station 14 Nyanotrasen Logo" width="128" height="128" src="https://raw.githubusercontent.com/Nyanotrasen/Nyanotrasen/master/Resources/Textures/Logo/icon.svg" /></p>
 <p align="center"> <img alt="Space Station 14 Nyanotrasen Logo" width="512" height="126" src="https://raw.githubusercontent.com/Nyanotrasen/Nyanotrasen/master/Resources/Textures/Logo/logo.png" /></p>
+-->
 
-Nyanotrasen is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
+## General Informations
 
-Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
+KoboldCove is a fork of [Nyanotrasen](https://github.com/Nyanotrasen/Nyanotrasen). embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
+
+[Space Station 14](https://github.com/space-wizards/space-station-14) is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
+
+## Project goals and direction
+
+This fork is focused exclusively on playing as Kobolds, a species of squished dwarf lizards, with no sexes and golem-like bodies.
+
+We embraces the concept of ghosts being real and spirits needing host bodies upon death, instead of ignoring it like other forks or codebases.
+
+The chems stations are removed, with drinks from the bartender providing healing effects of varying strengths.
+
+The Cartographer role is replaced with a Scribe role, whose job is to document the round and upload it directly onto Discord as a continuous archive of the station's history.
+
+The game promotes a sense of camaraderie and cooperation among players, with a focus on teamwork and an industrial feel, akin to Deep Rock Galactic, and players take on the roles of Kobolds taking over a rundown space station.
+
+<sup><sub>Did I hear a Booze and Blues?</sup></sub>
 
 ## Links
 
-#### Nyanotrasen
-[Website](https://nyanotrasen.moe) | [Wiki](https://wiki.nyanotrasen.moe/view/Main_Page) | [Discord](https://discord.gg/nyano)
+#### KoboldCove
+[Wiki](https://wiki.nyanotrasen.moe/view/Main_Page) | [Discord](https://discord.gg/ag4V7vNkNf)
 
 #### Space Station 14
 
@@ -20,9 +39,7 @@ The [docs site](https://docs.spacestation14.io/) has documentation on SS14s cont
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/Nyanotrasen/Nyanotrasen/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
-
-We are currently accepting translations of the game on our main repository. If you would like to translate the game into another language check the #localization channel in our [Discord](https://discord.gg/nyano)
+We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/koboldcove/koboldcove/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
 
 ## Building
 
@@ -34,8 +51,8 @@ We are currently accepting translations of the game on our main repository. If y
 
 ## License
 
-All code for the content repository is licensed under [MIT](https://github.com/Nyanotrasen/Nyanotrasen/blob/master/LICENSE.TXT).
+All code for the content repository is licensed under [MIT](https://github.com/koboldcove/koboldcove/blob/master/LICENSE.TXT).
 
-Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/Nyanotrasen/Nyanotrasen/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/koboldcove/koboldcove/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
 Note that some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
