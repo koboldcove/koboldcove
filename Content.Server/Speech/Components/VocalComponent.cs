@@ -45,6 +45,19 @@ public sealed class VocalComponent : Component
     /// </summary>
     [ViewVariables]
     public EmoteSoundsPrototype? EmoteSounds = null;
+
+    // KoboldCove: BROTHER!
+
+    /// <summary>
+    ///     Whether this entity is a kin of the Kobalds.
+    /// </summary>
+    /// <remarks>
+    ///     BROTHER!
+    /// </remarks>
+    [DataField("brother"), ViewVariables(VVAccess.ReadWrite)]
+    public bool Brother = true; // Change this to false once there are actually Kobolds to set it to true on.
+
+    // KoboldCove: BROTHER! end.
 }
 
 public sealed class ScreamActionEvent : InstantActionEvent
