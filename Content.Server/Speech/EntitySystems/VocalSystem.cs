@@ -76,6 +76,21 @@ public sealed class VocalSystem : EntitySystem
         if (args.Handled)
             return;
 
+    // KoboldCove: BROTHER!
+
+        if (component.Brother)
+        {
+            _chat.TryEmoteWithChat(uid, "Brother", checkEmote: false);
+
+            if (component.EmoteSounds == null || !component.EmoteSounds.Sounds.ContainsKey("Brother"))
+                _chat.TryPlayEmoteSound(uid, component.EmoteSounds, component.ScreamId);
+
+            args.Handled = true;
+            return;
+        }
+
+    // KoboldCove: BROTHER! end.
+
         _chat.TryEmoteWithChat(uid, component.ScreamActionId, checkEmote: false);
         args.Handled = true;
     }
