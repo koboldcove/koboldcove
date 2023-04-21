@@ -77,13 +77,23 @@ public sealed class VocalSystem : EntitySystem
             return;
 
     // KoboldCove: BROTHER!
+    List<string> shouts = new List<string>
+    {
+        "BROTHER!",
+        "BROTHERS!",
+        "KIN!",
+        "WEH!",
+        "YAP!",
+        "YIP!",
+        "RAAAA!",
+        "TOVARISH!"
+    };
 
         if (component.Brother)
         {
-            _chat.TryEmoteWithChat(uid, "Brother", checkEmote: false);
+            _chat.TrySendInGameICMessage(uid, _random.Pick(shouts), InGameICChatType.Speak, false);
 
-            if (component.EmoteSounds == null || !component.EmoteSounds.Sounds.ContainsKey("Brother"))
-                _chat.TryPlayEmoteSound(uid, component.EmoteSounds, component.ScreamId);
+            _chat.TryPlayEmoteSound(uid, component.EmoteSounds, component.ScreamId);
 
             args.Handled = true;
             return;
