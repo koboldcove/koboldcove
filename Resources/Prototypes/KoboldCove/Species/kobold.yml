@@ -1,0 +1,141 @@
+- type: species
+  id: Kobold
+  name: species-name-kobold
+  roundStart: true
+  prototype: MobKobold
+  sprites: MobKoboldSprites
+  defaultSkinTone: "#34a223"
+  markingLimits: MobKoboldMarkingLimits
+  dollPrototype: MobKoboldDummy
+  skinColoration: Hues
+  maleFirstNames: names_reptilian_male
+  femaleFirstNames: names_reptilian_female
+  naming: FirstDashFirst
+
+- type: speciesBaseSprites
+  id: MobKoboldSprites
+  sprites:
+    Head: MobKoboldHead
+    # Snout: MobHumanoidAnyMarking
+    Chest: MobKoboldTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobHumanoidEyes
+    LArm: MobKoboldLArm
+    RArm: MobKoboldRArm
+    LHand: MobKoboldLHand
+    RHand: MobKoboldRHand
+    LLeg: MobKoboldLLeg
+    RLeg: MobKoboldRLeg
+    LFoot: MobKoboldLFoot
+    RFoot: MobKoboldRFoot
+
+- type: markingPoints
+  id: MobKoboldMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ KoboldTailDefault ]
+    # Snout:
+    #   points: 1
+    #   required: true
+    #   defaultMarkings: [ LizardSnoutRound ]
+    HeadTop:
+      points: 1
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobKoboldHead
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobKoboldHeadMale
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobKoboldHeadFemale
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobKoboldTorso
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobKoboldTorsoMale
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobKoboldTorsoFemale
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobKoboldLLeg
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobKoboldLHand
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobKoboldLArm
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobKoboldLFoot
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobKoboldRLeg
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobKoboldRHand
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobKoboldRArm
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobKoboldRFoot
+  baseSprite:
+    sprite: KoboldCove/Mobs/Species/Kobold/parts.rsi
+    state: r_foot

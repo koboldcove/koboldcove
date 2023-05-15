@@ -1,0 +1,8 @@
+- type: marking
+  id: KoboldTailDefault
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Kobold]
+  sprites:
+  - sprite: KoboldCove/Mobs/Customization/kobold.rsi
+    state: tail_kobold
